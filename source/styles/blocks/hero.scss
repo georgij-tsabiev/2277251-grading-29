@@ -1,1 +1,7 @@
-/* Временный комментарий */
+.hero {
+  background-color: #ced7e0;
+
+  &--additional {
+    background-color: #9a232f;
+  }
+}
