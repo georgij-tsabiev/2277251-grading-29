@@ -21,6 +21,12 @@
   }
 }
 
+.catalog__item {
+  padding: 0 0 54px 0;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.15);
+}
+
 .catalog__name {
   margin: 0 0 28px 0;
   display: block;
@@ -34,4 +40,9 @@
     font-size: 20px;
     letter-spacing: 1px;
   }
+}
+
+.catalog__image {
+  display: block;
+  border-radius: 40px 40px 0 0;
 }

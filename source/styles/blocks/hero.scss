@@ -75,7 +75,9 @@
 }
 
 .hero__list {
+  @include flex(column);
   margin: 0 0 58px 0;
+  gap: 12px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 48px 0;
@@ -87,11 +89,28 @@
 }
 
 .hero__item {
-  padding: 0 0 0 44px;
+  padding: 6px 0 6px 44px;
   font-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  &--leaf {
+    background-image: url("../../images/icons/stack.svg#icon-leaf");
+    background-size: 18px 20px;
+  }
+
+  &--snowflake {
+    background-image: url("../../images/icons/stack.svg#icon-snowflake");
+    background-size: 24px 24px;
+  }
+
+  &--delivery {
+    background-image: url("../../images/icons/stack.svg#icon-delivery");
+    background-size: 32px 32px;
   }
 }
