@@ -1,1 +1,33 @@
-/* Временный комментарий */
+.catalog__title {
+  margin: 0 0 60px 0;
+  color: $secondary-color;
+  text-align: center;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+    font-size: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 92px 0;
+    font-size: 52px;
+  }
+}
+
+.catalog__name {
+  margin: 0 0 28px 0;
+  display: block;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 28px;
+}
+
+.catalog__button {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}

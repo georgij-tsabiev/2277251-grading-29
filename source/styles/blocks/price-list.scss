@@ -1,1 +1,14 @@
-/* Временный комментарий */
+.price-list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 52px 52px;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.price-list__price {
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
