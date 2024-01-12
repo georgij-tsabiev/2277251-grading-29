@@ -1,1 +1,83 @@
-/* Временный комментарий */
+.nav {
+  z-index: 2;
+  margin-left: auto;
+}
+
+.nav__toggle {
+  @include flex(row, normal, center);
+  padding: 15px 7px;
+  z-index: 1;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  background-image: url("../../images/icons/stack.svg#icon-burger");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__toggle--no-js.nav__toggle {
+  display: none;
+}
+
+.nav--opened .nav__toggle {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/stack.svg#icon-burger-close");
+  background-size: 28px 28px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__list {
+  @include flex(column);
+  padding: 32px 40px 152px 40px;
+  gap: 32px;
+  flex-wrap: wrap;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    @include flex();
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.nav--opened .nav__list {
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    top: 68px;
+    left: 0;
+    background-color: #f1f6fc;
+  }
+}
+
+.nav--closed .nav__list {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav--no-js.nav {
+  width: 100%;
+}
+
+.nav--no-js .nav__list {
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}

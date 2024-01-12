@@ -1,4 +1,26 @@
 .header {
+  @include flex(row, normal, center);
+  position: relative;
+  flex-wrap: wrap;
   padding: 4px 21px 4px 26px;
   background-color: $additional-color;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 192px 24px 156px;
+  }
+}
+
+.nav--opened .nav__list {
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    top: 68px;
+    left: 0;
+    background-color: #f1f6fc;
+  }
 }
