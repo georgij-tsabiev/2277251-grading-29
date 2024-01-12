@@ -1,1 +1,8 @@
-/* Временный комментарий */
+.radio-list__text {
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

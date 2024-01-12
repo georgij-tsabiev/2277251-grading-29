@@ -1,1 +1,16 @@
-/* Временный комментарий */
+.field {
+  padding: 16px 12px;
+  border: 1px solid $secondary-color;
+  border-radius: 20px;
+
+  &::placeholder {
+    opacity: 1;
+    color: rgba(142, 152, 146, 0.7);
+    font-family: "Raleway", "Tahoma", sans-serif;
+    font-size: 16px;
+
+    @media (min-width: $tablet-width) {
+      line-height: 20px;
+    }
+  }
+}

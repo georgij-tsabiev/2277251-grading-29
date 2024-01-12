@@ -1,1 +1,29 @@
-/* Временный комментарий */
+.order__title {
+  margin: 0 0 32px 0;
+  color: $secondary-color;
+  text-align: center;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 52px 0;
+    font-size: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 48px 0;
+    font-size: 52px;
+  }
+}
+
+.order__descr {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
