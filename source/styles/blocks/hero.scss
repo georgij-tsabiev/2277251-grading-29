@@ -1,7 +1,10 @@
 .hero {
+  padding: 60px 28px 190px 28px;
   background-color: #ced7e0;
   background-image: url("../../images/strawberries-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/strawberries-background-mobile@2x.jpg");
@@ -25,6 +28,7 @@
 }
 
 .hero--additional {
+  padding: 0;
   background-color: #9a232f;
 
   background-image: url("../../images/cranberries-background-mobile@1x.jpg");
