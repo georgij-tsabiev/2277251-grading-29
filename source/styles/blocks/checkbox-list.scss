@@ -1,3 +1,10 @@
+.checkbox-list {
+  @include flex(column);
+  max-height: 304px;
+  flex-wrap: wrap;
+  gap: 32px 20px;
+}
+
 .checkbox-list__control {
   @include flex();
   position: relative;
