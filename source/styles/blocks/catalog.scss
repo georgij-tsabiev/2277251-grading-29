@@ -21,6 +21,11 @@
   }
 }
 
+.catalog__list {
+  @include flex(column);
+  gap: 24px;
+}
+
 .catalog__item {
   padding: 0 0 54px 0;
   border-radius: 40px;
@@ -35,7 +40,14 @@
   font-size: 28px;
 }
 
+.catalog__price-list {
+  margin: 0 0 38px 0;
+}
+
 .catalog__button {
+  margin: 0 auto;
+  max-width: 220px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     letter-spacing: 1px;
@@ -43,6 +55,7 @@
 }
 
 .catalog__image {
+  margin: 0 0 28px 0;
   display: block;
   border-radius: 40px 40px 0 0;
 }
