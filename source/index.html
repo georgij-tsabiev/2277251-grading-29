@@ -192,7 +192,11 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <a class="logo" href="#">
-          <img class="logo__image" src="images/logo-mobile.svg" width="52" height="52" alt="Логотип сайта Ягода.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/jpeg" width="135" height="60">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/jpeg" width="133" height="60">
+            <img class="logo__image" src="images/logo-mobile.svg" width="52" height="52" alt="Логотип сайта Ягода.">
+          </picture>
         </a>
         <ul class="footer__social social reset-list">
           <li class="social__item">

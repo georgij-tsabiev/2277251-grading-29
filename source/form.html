@@ -9,28 +9,34 @@
   </head>
   <body class="page">
     <header class="header">
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="images/logo-mobile.svg" width="52" height="52" alt="Логотип сайта Ягода.">
-      </a>
-      <nav class="nav nav--closed nav--no-js">
-        <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
-          <span class="nav__toggle-line"></span>
-        </button>
-        <ul class="nav__list site-list reset-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Новости</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Контакты</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="form.html">Заказать</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper container">
+        <a class="logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/jpeg" width="135" height="60">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/jpeg" width="133" height="60">
+            <img class="logo__image" src="images/logo-mobile.svg" width="52" height="52" alt="Логотип сайта Ягода.">
+          </picture>
+        </a>
+        <nav class="nav nav--closed nav--no-js">
+          <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
+            <span class="nav__toggle-line"></span>
+          </button>
+          <ul class="nav__list site-list reset-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Каталог</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Новости</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Контакты</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="form.html">Заказать</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page__main">
       <section class="page__hero hero hero--additional">
@@ -200,23 +206,29 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="images/logo-mobile.svg" width="52" height="52" alt="Логотип сайта Ягода.">
-      </a>
-      <ul class="footer__social social reset-list">
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank" rel="noreferrer noopener"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank" rel="noreferrer noopener"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank" rel="noreferrer noopener"></a>
-        </li>
-      </ul>
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива по адаптивной вёрстке." target="_blank" rel="noreferrer noopener">
-        HTML Academy
-      </a>
+      <div class="footer__wrapper container">
+        <a class="logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/jpeg" width="135" height="60">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/jpeg" width="133" height="60">
+            <img class="logo__image" src="images/logo-mobile.svg" width="52" height="52" alt="Логотип сайта Ягода.">
+          </picture>
+        </a>
+        <ul class="footer__social social reset-list">
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank" rel="noreferrer noopener"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank" rel="noreferrer noopener"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank" rel="noreferrer noopener"></a>
+          </li>
+        </ul>
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива по адаптивной вёрстке." target="_blank" rel="noreferrer noopener">
+          HTML Academy
+        </a>
+      </div>
     </footer>
   </body>
 </html>
