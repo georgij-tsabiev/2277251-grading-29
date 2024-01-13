@@ -1,5 +1,4 @@
 .nav {
-  z-index: 2;
   margin-left: auto;
 }
 
@@ -42,7 +41,7 @@
   padding: 32px 40px 152px 40px;
   gap: 32px;
   flex-wrap: wrap;
-  z-index: 1;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     @include flex();
