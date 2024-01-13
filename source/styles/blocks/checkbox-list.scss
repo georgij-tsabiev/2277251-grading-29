@@ -1,8 +1,60 @@
+.checkbox-list__control {
+  @include flex();
+  position: relative;
+  cursor: pointer;
+}
+
 .checkbox-list__text {
+  padding: 2px 2px 2px 36px;
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 22px;
   }
+}
+
+.checkbox-list__field:checked + .checkbox-list__outline::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 3px;
+  top: 10px;
+  left: 5px;
+  background-color: $secondary-color;
+  transform: rotate(-45deg);
+}
+
+.checkbox-list__field:checked + .checkbox-list__outline::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 3px;
+  top: 12px;
+  left: 3px;
+  background-color: $secondary-color;
+  transform: rotate(45deg);
+}
+
+.checkbox-list__field:hover + .checkbox-list__outline::after,
+.checkbox-list__field:hover + .checkbox-list__outline::before {
+  background-color: rgba(123, 219, 10, 1);
+}
+
+.checkbox-list__field:hover + .checkbox-list__outline {
+  border-color: rgba(123, 219, 10, 1);
+}
+
+.checkbox-list__field:active + .checkbox-list__outline {
+  opacity: 0.6;
+}
+
+.checkbox-list__field:disabled ~ .checkbox-list__outline {
+  border-color: rgba(142, 152, 146, 0.7);
+}
+
+.checkbox-list__field:focus-visible + .checkbox-list__outline {
+  outline: 2px solid #000000;
+  outline-offset: 1px;
+  border-radius: 0%;
 }
