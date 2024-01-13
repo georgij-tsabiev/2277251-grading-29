@@ -1,5 +1,5 @@
 .catalog {
-  padding: 60px 28px 65px 28px;
+  padding: 60px 94px 65px 94px;
 }
 
 .catalog__title {
@@ -24,6 +24,12 @@
 .catalog__list {
   @include flex(column);
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 264px);
+    gap: 52px;
+  }
 }
 
 .catalog__item {

@@ -11,6 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 142px 22px 413px 214px;
     background-image: url("../../images/strawberries-background-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -66,6 +67,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 48px 0;
     font-size: 48px;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,5 +114,11 @@
   &--delivery {
     background-image: url("../../images/icons/stack.svg#icon-delivery");
     background-size: 32px 32px;
+  }
+}
+
+.hero__button {
+  @media (min-width: $tablet-width) {
+    max-width: 336px;
   }
 }

@@ -1,5 +1,9 @@
 .novelties {
   padding: 65px 26px 60px 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 26px 110px 26px;
+  }
 }
 
 .novelties__title {
@@ -24,12 +28,28 @@
 .novelties__list {
   @include flex(column);
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 348px);
+    gap: 34px 20px;
+  }
 }
 
 .novelties__item {
   padding: 32px 20px 72px 20px;
   border-radius: 40px;
   border: 2px solid $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 36px 106px 36px;
+
+    &:nth-child(3n+3) {
+      grid-column: 1 / -1;
+      max-width: 348px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .novelties__name {
