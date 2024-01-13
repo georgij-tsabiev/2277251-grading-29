@@ -1,5 +1,6 @@
 .radio-list {
   @include flex(column);
+  flex-wrap: wrap;
   gap: 32px;
 }
 
