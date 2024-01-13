@@ -1,5 +1,9 @@
 .contacts {
   padding: 72px 26px 24px 26px;
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 158px;
+  }
 }
 
 .contacts__title {
