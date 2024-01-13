@@ -33,8 +33,14 @@
 
 .contacts__address {
   margin: 0 0 12px 0;
+  padding: 0 0 0 28px;
+  max-width: 245px;
   font-style: normal;
   font-size: 14px;
+  background-image: url("../../images/icons/stack.svg#icon-leaf-secondary");
+  background-repeat: no-repeat;
+  background-size: 15px 23px;
+  background-position: left;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -45,12 +51,25 @@
 .contacts__phone,
 .contacts__email {
   margin: 0 0 12px 0;
+  padding: 6px 28px;
   display: block;
   color: #000000;
   font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: left;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.contacts__phone {
+  background-image: url("../../images/icons/stack.svg#icon-phone");
+  background-size: 15px 20px;
+}
+
+.contacts__email {
+  background-image: url("../../images/icons/stack.svg#icon-email");
+  background-size: 18px 14px;
 }
