@@ -1,1 +1,14 @@
-/* Временный комментарий */
+.logo {
+  display: block;
+  width: 52px;
+  height: 52px;
+  color: $secondary-color;
+
+  &:hover .logo__image {
+    color: #7bdb0a;
+  }
+
+  &:active .logo__image {
+    color: rgba(15, 128, 93, 0.5);
+  }
+}
