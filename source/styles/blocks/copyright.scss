@@ -1,1 +1,27 @@
-/* Временный комментарий */
+.copyright {
+  @include flex(row, normal, center);
+  margin-left: auto;
+  align-self: center;
+  position: relative;
+  max-width: 110px;
+  min-height: 24px;
+  padding: 0 28px 0 0;
+  color: #000000;
+  font-size: 11px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 24px;
+    mask-image: url("../../images/icons/stack.svg#icon-html-academy");
+    background-repeat: no-repeat;
+    background-color: #000000;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}

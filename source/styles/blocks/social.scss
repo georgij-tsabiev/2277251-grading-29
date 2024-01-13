@@ -1,3 +1,11 @@
+.social {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  gap: 20px;
+  align-items: center;
+}
+
 .social__link {
   position: relative;
   display: block;
@@ -33,5 +41,4 @@
     height: 20px;
     mask-image: url("../../images/icons/stack.svg#icon-youtube");
   }
-
 }

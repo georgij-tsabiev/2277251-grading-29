@@ -1,4 +1,6 @@
 .footer {
+  @include flex();
+  flex-wrap: wrap;
   padding: 11px 26px 20px 26px;
   background-color: $additional-color;
 }
