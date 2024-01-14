@@ -52,11 +52,11 @@
 }
 
 .radio-list__field:hover + .radio-list__outline {
-  border-color: rgba(123, 219, 10, 1);
+  border-color: #7bdb0a;
 }
 
 .radio-list__field:hover + .radio-list__outline::after {
-  background-color: rgba(123, 219, 10, 1);
+  background-color: #7bdb0a;
 }
 
 .radio-list__field:active + .radio-list__outline {

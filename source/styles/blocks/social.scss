@@ -44,11 +44,11 @@
 
   &:hover,
   &:focus-visible {
-    border-color: rgba(123, 219, 10, 1);
+    border-color: #7bdb0a;
     outline: none;
 
     &::before {
-      background-color: rgba(123, 219, 10, 1);
+      background-color: #7bdb0a;
     }
   }
 

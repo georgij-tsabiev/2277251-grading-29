@@ -56,11 +56,11 @@
 
 .checkbox-list__field:hover + .checkbox-list__outline::after,
 .checkbox-list__field:hover + .checkbox-list__outline::before {
-  background-color: rgba(123, 219, 10, 1);
+  background-color: #7bdb0a;
 }
 
 .checkbox-list__field:hover + .checkbox-list__outline {
-  border-color: rgba(123, 219, 10, 1);
+  border-color: #7bdb0a;
 }
 
 .checkbox-list__field:active + .checkbox-list__outline {

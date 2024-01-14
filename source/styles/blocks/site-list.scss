@@ -1,4 +1,17 @@
 .site-list__link {
   color: #000000;
   font-size: 20px;
+
+  &:hover,
+  &:focus-visible {
+    color: #7bdb0a;
+  }
+
+  &:active {
+    color: $secondary-color;
+  }
+
+  &--current {
+    color: $secondary-color;
+  }
 }
