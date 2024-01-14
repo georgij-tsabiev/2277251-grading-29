@@ -7,6 +7,11 @@
   padding: 0;
   display: block;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 50px 0;
+    padding: 0 70px;
+  }
 }
 
 .form__title {
@@ -40,4 +45,15 @@
 
 .form__storage .form__checkbox-list {
   gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 72px;
+    gap: 24px;
+  }
+}
+
+.form__feedback .form__title {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }

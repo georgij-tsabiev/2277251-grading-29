@@ -3,6 +3,11 @@
   flex-wrap: wrap;
   max-height: 304px;
   gap: 32px 20px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 168px;
+    gap: 24px;
+  }
 }
 
 .checkbox-list__control {
@@ -16,6 +21,7 @@
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
+    padding: 1px 2px 1px 36px;
     font-size: 18px;
     line-height: 22px;
   }

@@ -1,11 +1,34 @@
+.feedback {
+  padding: 0;
+}
+
 .feedback__list {
   @include flex(column);
   margin: 0 0 32px 0;
   gap: 36px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 24px;
+    margin: 0;
+  }
 }
 
 .feedback__item {
   @include flex(column);
+
+  &:nth-child(2) {
+    grid-column: 1;
+  }
+
+  &:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+
+  &:nth-child(5) {
+    grid-column: 1 / -1;
+  }
 }
 
 .feedback__label {

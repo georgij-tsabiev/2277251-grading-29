@@ -1,5 +1,9 @@
 .order {
   padding: 64px 26px 89px 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 72px;
+  }
 }
 
 .order__title {
@@ -27,6 +31,8 @@
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto 36px auto;
+    max-width: 532px;
     font-size: 18px;
     line-height: 22px;
   }
