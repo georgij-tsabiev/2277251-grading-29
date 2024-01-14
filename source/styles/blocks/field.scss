@@ -2,6 +2,9 @@
   padding: 16px 12px;
   border: 1px solid $secondary-color;
   border-radius: 20px;
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 
   &::placeholder {
     opacity: 1;
@@ -12,5 +15,15 @@
     @media (min-width: $tablet-width) {
       line-height: 20px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #7bdb0a;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: rgba(142, 152, 146, 0.7);
   }
 }
