@@ -3,21 +3,33 @@
 }
 
 .nav__toggle {
-  @include flex(row, normal, center);
+  @include flex(row, center, center);
   padding: 15px 7px;
   z-index: 1;
   position: relative;
   width: 60px;
   height: 60px;
   background-color: transparent;
-  background-image: url("../../images/icons/stack.svg#icon-burger");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   border: none;
 
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $secondary-color;
+    mask-image: url("../../images/icons/stack.svg#icon-burger");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: rgba(123, 219, 10, 1);
   }
 }
 
@@ -25,11 +37,10 @@
   display: none;
 }
 
-.nav--opened .nav__toggle {
-  width: 60px;
-  height: 60px;
-  background-image: url("../../images/icons/stack.svg#icon-burger-close");
-  background-size: 28px 28px;
+.nav--opened .nav__toggle::before {
+  width: 28px;
+  height: 28px;
+  mask-image: url("../../images/icons/stack.svg#icon-burger-close");
 
   @media (min-width: $tablet-width) {
     display: none;
