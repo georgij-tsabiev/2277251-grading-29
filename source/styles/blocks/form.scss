@@ -8,9 +8,17 @@
   display: block;
   border: none;
 
+  &:last-child {
+    margin: 0 0 32px 0;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 0 50px 0;
     padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -39,6 +47,8 @@
   letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 336px;
     letter-spacing: 1.4px;
   }
 }
@@ -50,10 +60,20 @@
     max-height: 72px;
     gap: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 48px;
+  }
 }
 
 .form__feedback .form__title {
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }

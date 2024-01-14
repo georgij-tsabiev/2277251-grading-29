@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 100px 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 324px;
+  }
 }
 
 .order__title {

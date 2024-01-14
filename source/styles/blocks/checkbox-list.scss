@@ -8,6 +8,11 @@
     max-height: 168px;
     gap: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-height: 72px;
+    gap: 24px 48px;
+  }
 }
 
 .checkbox-list__control {
