@@ -1,7 +1,5 @@
 .logo {
   display: block;
-  width: 52px;
-  height: 52px;
   color: $secondary-color;
 
   &:hover .logo__image {
@@ -10,5 +8,26 @@
 
   &:active .logo__image {
     color: rgba(15, 128, 93, 0.5);
+  }
+}
+
+.logo__image {
+  @media (min-width: $tablet-width) {
+    width: 133px;
+    height: 60px;
+  }
+}
+
+.logo__berry {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
