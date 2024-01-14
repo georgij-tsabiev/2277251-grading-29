@@ -12,4 +12,13 @@
     font-size: 28px;
     letter-spacing: 1.4px;
   }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #b22ec8;
+  }
+
+  &:active {
+    background-color: rgba(106, 16, 122, 0.6);
+  }
 }

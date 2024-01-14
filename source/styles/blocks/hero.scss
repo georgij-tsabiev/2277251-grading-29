@@ -120,6 +120,8 @@
 }
 
 .hero__button {
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
+
   @media (min-width: $tablet-width) {
     max-width: 336px;
   }
