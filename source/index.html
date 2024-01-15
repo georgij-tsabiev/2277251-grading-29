@@ -185,7 +185,16 @@
           <a class="contacts__email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
         </div>
         <div class="page__map map map--no-js"></div>
-        <div class="contacts__map-wrapper contacts__map-wrapper--no-js"></div>
+        <div class="contacts__map-wrapper contacts__map-wrapper--no-js">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/map-image-desktop.webp 1x, img/index/map-image-desktop@2x.webp 2x" width="527" height="457">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index/map-image-tablet.webp 1x, img/index/map-image-tablet@2x.webp 2x"  width="768" height="457">
+            <source type="image/webp" srcset="img/index/map-image.webp 1x, img/index/map-image@2x.webp 2x" width="320" height="455">
+            <source media="(min-width: 1150px)" srcset="img/index/map-image-desktop.jpg, img/index/map-image-desktop@2x.jpg 2x" width="527" height="457">
+            <source media="(min-width: 768px)" srcset="img/index/map-image-tablet.jpg, img/index/map-image-tablet@2x.jpg 2x" width="768" height="457">
+            <img class="contacts__map-image" src="img/index/map-image.jpg" srcset="img/index/map-image@2x.jpg 2x" width="320" height="455" alt="Мы на карте.">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="footer">
