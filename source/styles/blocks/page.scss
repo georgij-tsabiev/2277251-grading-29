@@ -19,5 +19,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    grid-column: 1;
+    grid-row: 1;
   }
 }

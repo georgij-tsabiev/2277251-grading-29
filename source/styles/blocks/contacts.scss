@@ -12,6 +12,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 100px 158px;
+    display: grid;
+    grid-template-columns: 553px 452px;
+    justify-content: center;
+    gap: 120px;
   }
 }
 
@@ -41,6 +45,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 20px 0;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
