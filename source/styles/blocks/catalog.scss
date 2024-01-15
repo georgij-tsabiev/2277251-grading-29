@@ -59,6 +59,15 @@
   color: $secondary-color;
   text-align: center;
   font-size: 28px;
+
+  &:hover,
+  &:focus {
+    color: #7bdb0a;
+  }
+
+  &:active {
+    color: $secondary-color;
+  }
 }
 
 .catalog__price-list {
