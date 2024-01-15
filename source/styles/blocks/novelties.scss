@@ -1,8 +1,14 @@
 .novelties {
-  padding: 65px 26px 60px 26px;
+  padding: 96px 26px 60px 26px;
+  background-image: url("../../images/icons/stack.svg#divider-mobile");
+  background-repeat: no-repeat;
+  background-size: 228px 32px;
+  background-position: top;
 
   @media (min-width: $tablet-width) {
     padding: 72px 26px 110px 26px;
+    background-image: url("../../images/icons/stack.svg#divider-tablet");
+    background-size: 296px 42px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,5 +1,14 @@
 .contacts {
-  padding: 72px 26px 24px 26px;
+  padding: 104px 26px 24px 26px;
+  background-image: url("../../images/icons/stack.svg#divider-mobile");
+  background-repeat: no-repeat;
+  background-size: 228px 32px;
+  background-position: top;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/icons/stack.svg#divider-tablet");
+    background-size: 296px 42px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 100px 158px;

@@ -1,5 +1,14 @@
 .form {
-  padding: 50px 0 0 0;
+  padding: 115px 0 0 0;
+  background-image: url("../../images/icons/stack.svg#divider-mobile");
+  background-repeat: no-repeat;
+  background-size: 228px 32px;
+  background-position: top;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/icons/stack.svg#divider-tablet");
+    background-size: 296px 42px;
+  }
 }
 
 .form__group {
