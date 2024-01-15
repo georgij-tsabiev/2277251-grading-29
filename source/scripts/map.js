@@ -1,5 +1,6 @@
 /* Карта */
 
+let ymaps;
 const mapWrapper = document.querySelector('.page__map');
 const mapImage = document.querySelector('.contacts__map-wrapper');
 const center = [59.91337456420126,30.331390999999872];
