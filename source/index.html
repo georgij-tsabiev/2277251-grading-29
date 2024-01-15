@@ -5,6 +5,8 @@
     <title>Ягоды: Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7588d1f7-5393-400e-bb93-5c54ef7b8d5c&lang=ru_RU" defer></script>
+    <script src="scripts/map.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page">
@@ -184,7 +186,7 @@
           <a class="contacts__phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
           <a class="contacts__email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
         </div>
-        <div class="page__map map map--no-js"></div>
+        <div class="page__map map map--no-js" id="map"></div>
         <div class="contacts__map-wrapper contacts__map-wrapper--no-js">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-image-desktop@1x.webp 1x, images/map-image-desktop@2x.webp 2x" width="553" height="372">

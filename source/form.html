@@ -5,6 +5,8 @@
     <title>Ягоды: Форма заказа</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7588d1f7-5393-400e-bb93-5c54ef7b8d5c&lang=ru_RU" defer></script>
+    <script src="scripts/map.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page">
@@ -192,16 +194,25 @@
           <button class="form__submit order-button button" type="submit">Заказать</button>
         </form>
       </section>
-      <section class="page__contacts contacts container">
-        <h2 class="contacts__title">Где забрать ягоды?</h2>
-        <div class="contacts-list">
+      <section class="page__contacts contacts">
+        <div class="contacts-list container">
+          <h2 class="contacts__title">Где забрать ягоды?</h2>
           <p class="contacts__descr">Забери ягоды с нашего склада по адресу:</p>
           <address class="contacts__address">Набережная Обводного канала, 101</address>
           <a class="contacts__phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
           <a class="contacts__email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
         </div>
         <div class="page__map map map--no-js"></div>
-        <div class="contacts__map-wrapper contacts__map-wrapper--no-js"></div>
+        <div class="contacts__map-wrapper contacts__map-wrapper--no-js">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-image-desktop@1x.webp 1x, images/map-image-desktop@2x.webp 2x" width="553" height="372">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-image-tablet@1x.webp 1x, images/map-image-tablet@2x.webp 2x" width="768" height="372">
+            <source type="image/webp" srcset="images/map-image-mobile@1x.webp 1x, images/map-image-mobile@2x.webp 2x" width="320" height="455">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-image-desktop@1x.jpg, images/map-image-desktop@2x.jpg 2x" width="553" height="372">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-image-tablet@1x.jpg, images/map-image-tablet@2x.jpg 2x" width="768" height="372">
+            <img class="contacts__map-image" src="images/map-image-mobile@1x.jpg" srcset="images/map-image-mobile@2x.jpg 2x" width="320" height="372" alt="Мы на карте.">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="footer">

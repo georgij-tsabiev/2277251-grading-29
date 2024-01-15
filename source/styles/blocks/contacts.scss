@@ -96,3 +96,15 @@
   background-image: url("../../images/icons/stack.svg#icon-email");
   background-size: 18px 14px;
 }
+
+.contacts__map-wrapper {
+  display: none;
+
+  &--no-js {
+    display: block;
+  }
+}
+
+.contacts__map-image {
+  width: 100%;
+}
