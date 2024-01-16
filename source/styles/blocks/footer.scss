@@ -6,4 +6,12 @@
   @include flex();
   flex-wrap: wrap;
   padding: 11px 26px 20px 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 26px 22px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 158px;
+  }
 }
