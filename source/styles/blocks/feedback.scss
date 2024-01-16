@@ -5,7 +5,7 @@
 .feedback__list {
   @include flex(column);
   margin: 0 0 32px 0;
-  gap: 36px;
+  gap: 12px;
 
   @media (min-width: $tablet-width) {
     display: grid;

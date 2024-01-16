@@ -5,11 +5,12 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: 205px 255px;
     gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 251px 354px;
     gap: 48px;
   }
 }
