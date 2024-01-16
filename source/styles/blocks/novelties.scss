@@ -101,6 +101,10 @@
       margin: 0;
     }
   }
+
+  &:hover {
+    box-shadow: 0 10px 10px 0 rgba(88, 13, 101, 0.15);
+  }
 }
 
 .novelties__name {
