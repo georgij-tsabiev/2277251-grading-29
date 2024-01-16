@@ -42,6 +42,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 200px;
     background-image: url("../../images/cranberries-background-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
