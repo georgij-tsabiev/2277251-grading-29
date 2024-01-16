@@ -51,6 +51,20 @@
   padding: 0 0 54px 0;
   border-radius: 40px;
   box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.15);
+
+  &:hover {
+    box-shadow: 0 10px 10px 0 rgba(88, 13, 101, 0.15);
+  }
+}
+
+.catalog__link {
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .catalog__name {
