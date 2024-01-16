@@ -58,14 +58,16 @@
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    @include flex();
+    display: grid;
+    grid-template-columns: repeat(4, 112px);
     padding: 0;
-    flex-wrap: wrap;
     gap: 16px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    grid-template-columns: repeat(4, 132px);
+    gap: 28px;
   }
 }
 
