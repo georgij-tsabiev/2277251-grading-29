@@ -10,13 +10,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 36px 24px;
+    gap: 12px 24px;
     margin: 0;
   }
 }
 
 .feedback__item {
   @include flex(column);
+  padding: 0 0 24px 0;
+  position: relative;
 
   &:nth-child(2) {
     grid-column: 1;
@@ -57,4 +59,24 @@
     line-height: 20px;
     margin: 0 0 0 2px;
   }
+}
+
+.feedback__error-clue {
+  margin: 4px 0 0 12px;
+  display: none;
+  color: #ff8282;
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.feedback__field-error {
+  border-color: #ff8282;
+}
+
+.feedback__field-error ~ .feedback__error-clue {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  display: block;
 }

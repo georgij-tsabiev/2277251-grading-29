@@ -169,25 +169,30 @@
             <legend class="form__title">Ваши контакты</legend>
             <ul class="feedback__list reset-list">
               <li class="feedback__item">
-                <!-- Для показа состояния ошибки инпута добавить модификатор error с двумя тире для field -->
+                <!--Для показа состояния ошибки поля с подсказкой добавить для инпута класс feedback__field-error-->
                 <label class="feedback__label" for="user-name">Имя</label>
                 <input class="feedback__field field" type="text" name="user-name" id="user-name" placeholder="Как к вам обращаться?" aria-label="Введите ваше имя." required>
+                <span class="feedback__error-clue">Подсказка</span>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label" for="user-number">Телефон</label>
                 <input class="feedback__field field" type="tel" name="user-number" id="user-number" placeholder="+7 ххх ххх хх хх" aria-label="Введите ваш номер телефона." required>
+                <span class="feedback__error-clue">Подсказка</span>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label" for="user-email">Email</label>
                 <input class="feedback__field field" type="email" name="user-email" id="user-email" placeholder="Ваш email" aria-label="Введите ваш email." required>
+                <span class="feedback__error-clue">Подсказка</span>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label" for="user-address">Адрес</label>
                 <input class="feedback__field field" type="text" name="user-address" id="user-address" placeholder="Адрес в Санкт-Петербурге" aria-label="Введите адрес доставки." required>
+                <span class="feedback__error-clue">Подсказка</span>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label" for="user-wishes">Пожелания к заказу</label>
                 <textarea class="feedback__field field wishes-field" name="user-wishes" id="user-wishes" cols="30" rows="7" placeholder="Чем мы можем вам помочь?" aria-label="Введите ваши пожелания к заказу."></textarea>
+                <span class="feedback__error-clue">Подсказка</span>
               </li>
             </ul>
           </fieldset>
