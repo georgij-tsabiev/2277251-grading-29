@@ -63,17 +63,31 @@
 }
 
 .form__storage .form__checkbox-list {
+  @include flex(column);
   gap: 23px;
 
   @media (min-width: $tablet-width) {
-    max-height: 72px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max-content);
     gap: 24px 48px;
+  }
+}
+
+.form__checkbox-item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: auto;
+    grid-column: auto;
   }
 }
 

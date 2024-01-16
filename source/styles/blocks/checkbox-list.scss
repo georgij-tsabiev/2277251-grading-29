@@ -1,17 +1,129 @@
 .checkbox-list {
-  @include flex(column);
-  flex-wrap: wrap;
-  max-height: 304px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px 20px;
 
   @media (min-width: $tablet-width) {
-    max-height: 168px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 72px;
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px 48px;
+  }
+}
+
+.checkbox-list__item {
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    grid-column: 1;
+  }
+
+  &:nth-child(7) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  &:nth-child(8) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  &:nth-child(9) {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  &:nth-child(10) {
+    grid-row: 4;
+    grid-column: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(5) {
+      grid-row: 1;
+      grid-column: 2;
+    }
+
+    &:nth-child(6) {
+      grid-row: 2;
+      grid-column: 2;
+    }
+
+    &:nth-child(7) {
+      grid-row: 3;
+    }
+
+    &:nth-child(8) {
+      grid-row: 4;
+    }
+
+    &:nth-child(9) {
+      grid-row: 1;
+      grid-column: 3;
+    }
+
+    &:nth-child(10) {
+      grid-row: 2;
+      grid-column: 3;
+    }
+
+    &:nth-child(11n) {
+      grid-row: 3;
+      grid-column: 3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(3) {
+      grid-row: 1;
+      grid-column: 2;
+    }
+
+    &:nth-child(4) {
+      grid-row: 2;
+      grid-column: 2;
+    }
+
+    &:nth-child(5) {
+      grid-row: 1;
+      grid-column: 3;
+    }
+
+    &:nth-child(6) {
+      grid-row: 2;
+      grid-column: 3;
+    }
+
+    &:nth-child(7) {
+      grid-row: 1;
+      grid-column: 4;
+    }
+
+    &:nth-child(8) {
+      grid-row: 2;
+      grid-column: 4;
+    }
+
+    &:nth-child(9) {
+      grid-row: 1;
+      grid-column: 5;
+    }
+
+    &:nth-child(10) {
+      grid-row: 2;
+      grid-column: 5;
+    }
+
+    &:nth-child(11n) {
+      grid-row: auto;
+      grid-column: 1;
+    }
   }
 }
 

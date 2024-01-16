@@ -5,8 +5,22 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, max-content);
     gap: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 48px;
+  }
+}
+
+.radio-list__item:nth-child(1) {
+  .radio-list__text {
+    max-width: 150px;
+
+    @media (min-width: $tablet-width) {
+      max-width: none;
+    }
   }
 }
 
