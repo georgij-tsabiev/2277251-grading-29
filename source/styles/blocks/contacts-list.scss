@@ -1,4 +1,5 @@
 .contacts-list {
+  @include flex(column);
   padding: 0 26px;
 
   @media (min-width: $tablet-width) {

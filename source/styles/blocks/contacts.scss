@@ -19,7 +19,7 @@
   }
 }
 
-.contacts__title {
+.contacts-list__title {
   margin: 0 0 70px 0;
   color: $secondary-color;
   text-align: center;
@@ -37,7 +37,7 @@
   }
 }
 
-.contacts__descr {
+.contacts-list__descr {
   margin: 0 0 34px 0;
   text-align: center;
   font-size: 16px;
@@ -52,7 +52,7 @@
   }
 }
 
-.contacts__address {
+.contacts-list__address {
   margin: 0 0 12px 0;
   padding: 0 0 0 28px;
   max-width: 245px;
@@ -70,10 +70,11 @@
   }
 }
 
-.contacts__phone,
-.contacts__email {
+.contacts-list__phone,
+.contacts-list__email {
   margin: 0 0 12px 0;
   padding: 6px 28px;
+  align-self: flex-start;
   display: block;
   color: #000000;
   font-size: 14px;
@@ -95,12 +96,12 @@
   }
 }
 
-.contacts__phone {
+.contacts-list__phone {
   background-image: url("../../images/icons/stack.svg#icon-phone");
   background-size: 15px 20px;
 }
 
-.contacts__email {
+.contacts-list__email {
   background-image: url("../../images/icons/stack.svg#icon-email");
   background-size: 18px 14px;
 }
