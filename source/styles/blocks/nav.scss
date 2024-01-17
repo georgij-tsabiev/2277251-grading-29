@@ -40,6 +40,10 @@
   display: none;
 }
 
+.nav--opened .nav__toggle {
+  transform: translateX(8px);
+}
+
 .nav--opened .nav__toggle::before {
   width: 28px;
   height: 28px;
@@ -53,7 +57,7 @@
 .nav__list {
   @include flex(column);
   padding: 32px 40px 152px 40px;
-  gap: 32px;
+  gap: 28px;
   flex-wrap: wrap;
   z-index: -1;
 
