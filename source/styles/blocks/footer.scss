@@ -5,6 +5,7 @@
 .footer__wrapper {
   @include flex();
   flex-wrap: wrap;
+  gap: 5px 0;
   padding: 11px 26px 20px 26px;
 
   @media (min-width: $tablet-width) {
@@ -14,4 +15,8 @@
   @media (min-width: $desktop-width) {
     padding: 24px 158px;
   }
+}
+
+.footer__social {
+  padding: 0 0 8px 0;
 }

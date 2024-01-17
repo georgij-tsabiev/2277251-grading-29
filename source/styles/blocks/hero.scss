@@ -81,8 +81,9 @@
 
 .hero__list {
   @include flex(column);
-  margin: 0 0 58px 0;
-  gap: 12px;
+  margin: 0 0 59px 0;
+  padding: 0 0 0 29px;
+  gap: 8px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 48px 0;
@@ -106,21 +107,25 @@
 
   &--leaf {
     background-image: url("../../images/icons/stack.svg#icon-leaf");
-    background-size: 18px 20px;
+    background-position: 6px;
+    background-size: 19px 20px;
   }
 
   &--snowflake {
     background-image: url("../../images/icons/stack.svg#icon-snowflake");
+    background-position: 3px 25px;
     background-size: 24px 24px;
   }
 
   &--delivery {
     background-image: url("../../images/icons/stack.svg#icon-delivery");
+    background-position: 0 12px;
     background-size: 32px 32px;
   }
 }
 
 .hero__button {
+  padding: 16px 82px 16px 76px;
   box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
 
   @media (min-width: $tablet-width) {

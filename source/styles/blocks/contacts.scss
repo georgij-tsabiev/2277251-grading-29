@@ -1,5 +1,6 @@
 .contacts {
-  padding: 104px 0 24px 0;
+  margin: 0 0 60px 0;
+  padding: 104px 0 0 0;
   background-image: url("../../images/icons/stack.svg#divider-mobile");
   background-repeat: no-repeat;
   background-size: 228px 32px;
@@ -17,93 +18,6 @@
     justify-content: center;
     gap: 120px;
   }
-}
-
-.contacts-list__title {
-  margin: 0 0 70px 0;
-  color: $secondary-color;
-  text-align: center;
-  font-family: "Comfortaa", "Arial", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 72px 0;
-    font-size: 48px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 52px;
-  }
-}
-
-.contacts-list__descr {
-  margin: 0 0 34px 0;
-  text-align: center;
-  font-size: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 20px 0;
-    font-size: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: start;
-  }
-}
-
-.contacts-list__address {
-  margin: 0 0 12px 0;
-  padding: 0 0 0 28px;
-  max-width: 245px;
-  font-style: normal;
-  font-size: 14px;
-  background-image: url("../../images/icons/stack.svg#icon-leaf-secondary");
-  background-repeat: no-repeat;
-  background-size: 15px 23px;
-  background-position: left;
-
-  @media (min-width: $tablet-width) {
-    max-width: none;
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-.contacts-list__phone,
-.contacts-list__email {
-  margin: 0 0 12px 0;
-  padding: 6px 28px;
-  align-self: flex-start;
-  display: block;
-  color: #000000;
-  font-size: 14px;
-  background-repeat: no-repeat;
-  background-position: left;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  &:hover,
-  &:focus-visible {
-    color: #7bdb0a;
-  }
-
-  &:active {
-    color: $secondary-color;
-  }
-}
-
-.contacts-list__phone {
-  background-image: url("../../images/icons/stack.svg#icon-phone");
-  background-size: 15px 20px;
-}
-
-.contacts-list__email {
-  background-image: url("../../images/icons/stack.svg#icon-email");
-  background-size: 18px 14px;
 }
 
 .contacts__map-wrapper {

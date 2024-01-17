@@ -1,0 +1,105 @@
+.contacts-wrapper {
+  @include flex(column);
+  margin: 0 0 25px 0;
+  padding: 0 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.contacts-wrapper__title {
+  margin: 0 0 70px 0;
+  color: $secondary-color;
+  text-align: center;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+    font-size: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+  }
+}
+
+.contacts-wrapper__descr {
+  margin: 0 0 34px 0;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.contacts-wrapper__list {
+  @include flex(column);
+  gap: 12px;
+  padding: 0 0 0 8px;
+}
+
+.contacts-wrapper__address {
+  padding: 0 0 0 28px;
+  max-width: 245px;
+  font-style: normal;
+  font-size: 14px;
+  background-image: url("../../images/icons/stack.svg#icon-leaf-secondary");
+  background-repeat: no-repeat;
+  background-size: 15px 23px;
+  background-position: left;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.contacts-wrapper__phone,
+.contacts-wrapper__email {
+  padding: 6px 28px 9px 28px;
+  align-self: flex-start;
+  display: block;
+  color: #000000;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: #7bdb0a;
+  }
+
+  &:active {
+    color: $secondary-color;
+  }
+}
+
+.contacts-wrapper__phone {
+  background-image: url("../../images/icons/stack.svg#icon-phone");
+  background-size: 15px 20px;
+}
+
+.contacts-wrapper__email {
+  background-image: url("../../images/icons/stack.svg#icon-email");
+  background-size: 18px 14px;
+}
