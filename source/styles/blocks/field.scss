@@ -20,6 +20,10 @@
 
   &--address {
     min-height: 88px;
+
+    @media (min-width: $tablet-width) {
+      min-height: auto;
+    }
   }
 
   &:hover,

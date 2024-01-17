@@ -37,7 +37,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 36px auto;
-    max-width: 532px;
+    max-width: 470px;
+    transform: translateX(-2px);
+    letter-spacing: 0.2px;
     font-size: 18px;
     line-height: 22px;
   }

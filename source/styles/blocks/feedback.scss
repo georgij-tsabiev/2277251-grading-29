@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px 24px;
+    gap: 10px 24px;
   }
 }
 
@@ -31,6 +31,10 @@
 
     .feedback__label {
       padding: 2px 0 8px 12px;
+
+      @media (min-width: $tablet-width) {
+        padding: 2px 0 4px 12px;
+      }
     }
   }
 

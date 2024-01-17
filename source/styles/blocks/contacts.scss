@@ -21,14 +21,23 @@
     justify-content: center;
     gap: 120px;
   }
+}
 
-  &--indentations {
+.contacts--indentations {
+  margin: 0 0 64px;
+  padding: 94px 0 0 0;
+
+  .contacts-wrapper__title {
     margin: 0 0 64px;
-    padding: 94px 0 0 0;
 
-    .contacts-wrapper__title {
-      margin: 0 0 64px;
+    @media (min-width: $tablet-width) {
+      margin: 0 0 73px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 100px;
+    padding: 114px 0 0 0;
   }
 }
 

@@ -6,6 +6,7 @@
   background-position: top;
 
   @media (min-width: $tablet-width) {
+    padding: 114px 0 0 0;
     background-image: url("../../images/icons/stack.svg#divider-tablet");
     background-size: 296px 42px;
   }
@@ -59,8 +60,16 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
+    padding: 17px 83px 18px 81px;
     max-width: 336px;
+    font-size: 28px;
     letter-spacing: 1.4px;
+  }
+}
+
+.form__storage {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 48px 0;
   }
 }
 
@@ -71,7 +80,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, max-content);
-    gap: 24px;
+    gap: 24px 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,14 +102,25 @@
   }
 }
 
+.form__delivery {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 45px 0;
+  }
+}
+
 .form__feedback {
   margin: 0 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
+  }
 }
 
 .form__feedback .form__title {
   margin: 0 0 27px 0;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 38px 0;
     text-align: center;
   }
 

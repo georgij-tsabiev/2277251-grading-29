@@ -1,3 +1,7 @@
 .wishes-field {
   min-height: 124px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 144px;
+  }
 }
