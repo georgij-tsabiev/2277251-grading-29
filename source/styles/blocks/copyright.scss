@@ -19,10 +19,17 @@
     mask-image: url("../../images/icons/stack.svg#icon-html-academy");
     background-repeat: no-repeat;
     background-color: #000000;
+
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      height: 32px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0 34px 0 0;
     max-width: 153px;
+    min-height: 32px;
     font-size: 16px;
   }
 

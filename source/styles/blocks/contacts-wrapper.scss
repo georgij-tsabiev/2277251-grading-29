@@ -4,6 +4,7 @@
   padding: 0 26px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 42px 0;
     padding: 0 155px;
   }
 
@@ -37,7 +38,8 @@
   letter-spacing: 0.16px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 20px 0;
+    margin: 0 0 27px 0;
+    padding: 0 5px 0 0;
     font-size: 20px;
   }
 
@@ -50,6 +52,11 @@
   @include flex(column);
   gap: 12px;
   padding: 0 0 0 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 33px;
+    gap: 17px;
+  }
 }
 
 .contacts-wrapper__address {
@@ -57,6 +64,7 @@
   max-width: 245px;
   font-style: normal;
   font-size: 14px;
+  letter-spacing: 0.1px;
   background-image: url("../../images/icons/stack.svg#icon-leaf-secondary");
   background-repeat: no-repeat;
   background-size: 15px 23px;
@@ -80,6 +88,8 @@
   background-position: left;
 
   @media (min-width: $tablet-width) {
+    background-position: 0 7px;
+    padding: 6px 28px 3px 28px;
     font-size: 16px;
     line-height: 20px;
   }

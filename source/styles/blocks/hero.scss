@@ -68,7 +68,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 48px 0;
+    margin: 0 0 44px 0;
     font-size: 48px;
     text-align: start;
   }
@@ -87,6 +87,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 48px 0;
+    padding: 0;
+    gap: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,6 +101,7 @@
   font-size: 16px;
   background-repeat: no-repeat;
   background-position: left;
+  letter-spacing: 0.15px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -115,12 +118,20 @@
     background-image: url("../../images/icons/stack.svg#icon-snowflake");
     background-position: 3px 25px;
     background-size: 24px 24px;
+
+    @media (min-width: $tablet-width) {
+      background-position: 3px 17px;
+    }
   }
 
   &--delivery {
     background-image: url("../../images/icons/stack.svg#icon-delivery");
     background-position: 0 12px;
     background-size: 32px 32px;
+
+    @media (min-width: $tablet-width) {
+      background-position: 0 2px;
+    }
   }
 }
 
@@ -129,6 +140,7 @@
   box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
 
   @media (min-width: $tablet-width) {
+    padding: 17px 83px 18px 80px;
     max-width: 336px;
   }
 }

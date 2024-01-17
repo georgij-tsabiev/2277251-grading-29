@@ -6,7 +6,7 @@
   background-position: top;
 
   @media (min-width: $tablet-width) {
-    padding: 72px 26px 110px 26px;
+    padding: 115px 26px 110px 26px;
     background-image: url("../../images/icons/stack.svg#divider-tablet");
     background-size: 296px 42px;
   }
@@ -60,11 +60,38 @@
   border-radius: 40px;
   border: 2px solid $secondary-color;
 
+  @media (min-width: $tablet-width) {
+    padding: 32px 36px 104px 36px;
+    min-height: 494px;
+
+    &:nth-child(3n+3) {
+      grid-column: 1 / -1;
+      max-width: 348px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(3n+3) {
+      grid-column: auto;
+      max-width: none;
+      margin: 0;
+    }
+  }
+
   &:nth-child(1) {
     padding: 40px 18px 70px 18px;
 
     .novelties__name {
       margin: 0 0 30px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 47px 34px 104px;
+
+      .novelties__name {
+        margin: 0 0 42px;
+      }
     }
   }
 
@@ -73,6 +100,19 @@
 
     .novelties__name {
       margin: 0 0 44px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 63px 34px 104px;
+      transform: translateX(-5px);
+
+      .novelties__name {
+        margin: 0 0 58px;
+      }
+
+      .novelties__descr {
+        letter-spacing: 0.2px;
+      }
     }
   }
 
@@ -98,24 +138,6 @@
 
     @media (min-width: $desktop-width) {
       bottom: 44px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 32px 36px 106px 36px;
-
-    &:nth-child(3n+3) {
-      grid-column: 1 / -1;
-      max-width: 348px;
-      margin: 0 auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:nth-child(3n+3) {
-      grid-column: auto;
-      max-width: none;
-      margin: 0;
     }
   }
 
