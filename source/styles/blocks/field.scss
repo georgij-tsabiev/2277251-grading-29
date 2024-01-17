@@ -19,6 +19,7 @@
   }
 
   &--address {
+    resize: none;
     min-height: 88px;
 
     @media (min-width: $tablet-width) {
