@@ -158,7 +158,7 @@
                 <label class="radio-list__control control">
                   <input class="radio-list__field visually-hidden" type="radio" name="delivery-type" value="delivery" checked>
                   <span class="control__outline radio-list__outline"></span>
-                  <span class="radio-list__text">Доставка <br> (по СПБ в пределах КАД)</span>
+                  <span class="radio-list__text">Доставка <br> (по СПБ в пределах &nbsp;КАД)</span>
                 </label>
               </li>
               <li class="radio-list__item">
@@ -191,12 +191,12 @@
               </li>
               <li class="feedback__item">
                 <label class="feedback__label" for="user-address">Адрес</label>
-                <input class="feedback__field field" type="text" name="user-address" id="user-address" placeholder="Адрес в Санкт-Петербурге" aria-label="Введите адрес доставки." required>
+                <textarea class="feedback__field field field--address" name="user-address" id="user-address" cols="15" rows="2" placeholder="Адрес в Санкт-Петербурге" aria-label="Введите адрес доставки." required></textarea>
                 <span class="feedback__error-clue">Подсказка</span>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label" for="user-wishes">Пожелания к заказу</label>
-                <textarea class="feedback__field field wishes-field" name="user-wishes" id="user-wishes" cols="30" rows="7" placeholder="Чем мы можем вам помочь?" aria-label="Введите ваши пожелания к заказу."></textarea>
+                <textarea class="feedback__field field wishes-field" name="user-wishes" id="user-wishes" cols="30" rows="4" placeholder="Чем мы можем вам помочь?" aria-label="Введите ваши пожелания к заказу."></textarea>
                 <span class="feedback__error-clue">Подсказка</span>
               </li>
             </ul>
@@ -204,7 +204,7 @@
           <button class="form__submit order-button button" type="submit">Заказать</button>
         </form>
       </section>
-      <section class="page__contacts contacts">
+      <section class="page__contacts contacts contacts--indentations">
         <div class="contacts-wrapper container">
           <h2 class="contacts-wrapper__title">Где забрать&nbsp; ягоды?</h2>
           <p class="contacts-wrapper__descr">Забери ягоды с нашего склада по&nbsp;адресу:</p>

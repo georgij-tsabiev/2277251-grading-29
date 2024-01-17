@@ -17,7 +17,7 @@
 
 .radio-list__item:nth-child(1) {
   .radio-list__text {
-    max-width: 150px;
+    max-width: 190px;
 
     @media (min-width: $tablet-width) {
       max-width: none;
@@ -34,6 +34,7 @@
 .radio-list__text {
   padding: 0 0 0 36px;
   font-size: 16px;
+  letter-spacing: 0.16px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -45,14 +46,14 @@
   border-radius: 50%;
 }
 
-.radio-list__field + .radio-list__outline::before {
+/* .radio-list__field + .radio-list__outline::before {
   content: "";
   position: absolute;
   width: 24px;
   height: 24px;
   top: 0;
   left: 0;
-}
+} */
 
 .radio-list__field:checked + .radio-list__outline::after {
   content: "";

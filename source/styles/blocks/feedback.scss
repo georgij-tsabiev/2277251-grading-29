@@ -4,14 +4,12 @@
 
 .feedback__list {
   @include flex(column);
-  margin: 0 0 32px 0;
-  gap: 12px;
+  gap: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px 24px;
-    margin: 0;
   }
 }
 
@@ -30,9 +28,15 @@
 
   &:nth-child(5) {
     grid-column: 1 / -1;
+
+    .feedback__label {
+      padding: 2px 0 8px 12px;
+    }
   }
 
   &:last-child {
+    padding-bottom: 0;
+
     .feedback__label::after {
       content: none;
     }
@@ -40,9 +44,10 @@
 }
 
 .feedback__label {
-  padding: 2px 0 7px 12px;
+  padding: 2px 0 4px 12px;
   position: relative;
   font-size: 14px;
+  letter-spacing: 0.2px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

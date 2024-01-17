@@ -21,6 +21,15 @@
     justify-content: center;
     gap: 120px;
   }
+
+  &--indentations {
+    margin: 0 0 64px;
+    padding: 94px 0 0 0;
+
+    .contacts-wrapper__title {
+      margin: 0 0 64px;
+    }
+  }
 }
 
 .contacts__map-wrapper {

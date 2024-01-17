@@ -1,5 +1,5 @@
 .field {
-  padding: 16px 12px;
+  padding: 15px 9px 15px 11px;
   border: 1px solid $secondary-color;
   border-radius: 20px;
   font-family: "Raleway", "Tahoma", sans-serif;
@@ -11,10 +11,15 @@
     color: rgba(142, 152, 146, 0.7);
     font-family: "Raleway", "Tahoma", sans-serif;
     font-size: 16px;
+    letter-spacing: 0.16px;
 
     @media (min-width: $tablet-width) {
       line-height: 20px;
     }
+  }
+
+  &--address {
+    min-height: 88px;
   }
 
   &:hover,
