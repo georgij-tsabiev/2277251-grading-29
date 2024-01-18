@@ -1,16 +1,8 @@
 .footer {
-  background-color: $additional-color;
-}
-
-.footer__wrapper {
-  @include flex();
-  flex-wrap: wrap;
-  gap: 5px 0;
   padding: 11px 26px 20px 26px;
+  background-color: $additional-color;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     padding: 22px 26px 22px 20px;
   }
 
@@ -19,8 +11,24 @@
   }
 }
 
+.footer__wrapper {
+  @include flex();
+  flex-wrap: wrap;
+  gap: 8px 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 722px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1125px;
+  }
+}
+
 .footer__social {
-  padding: 0 0 8px 0;
+  padding: 0 0 4px 0;
 
   @media (min-width: $tablet-width) {
     padding: 2px 0 0 20px;

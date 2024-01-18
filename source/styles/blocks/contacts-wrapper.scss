@@ -1,7 +1,6 @@
 .contacts-wrapper {
   @include flex(column);
   margin: 0 auto 25px auto;
-  padding: 0 26px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 42px auto;
@@ -55,7 +54,7 @@
   padding: 0 0 0 8px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 33px;
+    padding: 0 0 0 7px;
     gap: 17px;
   }
 

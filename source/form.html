@@ -48,163 +48,165 @@
       <section class="page__hero hero hero--additional">
         <h2 class="visually-hidden">Фон с ягодами</h2>
       </section>
-      <section class="page__order order container">
-        <h1 class="order__title">Закажи ягоды</h1>
-        <p class="order__descr">Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или замороженными</p>
-        <form class="order__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group form__berries">
-            <legend class="form__title">Выберите ягоды</legend>
-            <ul class="form__checkbox-list checkbox-list reset-list">
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cowberry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">брусника</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cherry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">вишня</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="blueberry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">голубика</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="blackberry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">ежевика</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="strawberry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">клубника</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cranberry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">клюква</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="gooseberry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">крыжовник</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="raspberry">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">малина</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cloudberry" disabled>
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">морошка</span>
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="huckleberry" disabled>
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">черника</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group form__storage">
-            <legend class="form__title">Вид хранения</legend>
-            <ul class="form__checkbox-list checkbox-list reset-list">
-              <li class="form__checkbox-item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="storage-type" value="fresh-berries">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">свежие ягоды</span>
-                </label>
-              </li>
-              <li class="form__checkbox-item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="storage-type" value="frozen-berries">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">замороженные ягоды</span>
-                </label>
-              </li>
-              <li class="form__checkbox-item">
-                <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="storage-type" value="berry-mixes">
-                  <span class="control__outline checkbox-list__outline"></span>
-                  <span class="checkbox-list__text">ягодные миксы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group form__delivery">
-            <legend class="form__title">Способ доставки</legend>
-            <ul class="form__radio-list radio-list reset-list">
-              <li class="radio-list__item">
-                <label class="radio-list__control control">
-                  <input class="radio-list__field visually-hidden" type="radio" name="delivery-type" value="delivery" checked>
-                  <span class="control__outline radio-list__outline"></span>
-                  <span class="radio-list__text">Доставка <br> (по СПБ в пределах &nbsp;КАД)</span>
-                </label>
-              </li>
-              <li class="radio-list__item">
-                <label class="radio-list__control control">
-                  <input class="radio-list__field visually-hidden" type="radio" name="delivery-type" value="pickup">
-                  <span class="control__outline radio-list__outline"></span>
-                  <span class="radio-list__text">Самовывоз <br> (Набережная&nbsp;Обводного канала, 101)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group form__feedback feedback">
-            <legend class="form__title">Ваши контакты</legend>
-            <ul class="feedback__list reset-list">
-              <li class="feedback__item">
-                <!-- Для показа состояния ошибки поля с подсказкой добавить для инпута класс feedback__field-error -->
-                <label class="feedback__label" for="user-name">Имя</label>
-                <input class="feedback__field field" type="text" name="user-name" id="user-name" placeholder="Как к вам обращаться?" aria-label="Введите ваше имя." required>
-                <span class="feedback__error-clue">Подсказка</span>
-              </li>
-              <li class="feedback__item">
-                <label class="feedback__label" for="user-number">Телефон</label>
-                <input class="feedback__field field" type="tel" name="user-number" id="user-number" placeholder="+7 ххх ххх хх хх" aria-label="Введите ваш номер телефона." required>
-                <span class="feedback__error-clue">Подсказка</span>
-              </li>
-              <li class="feedback__item">
-                <label class="feedback__label" for="user-email">Email</label>
-                <input class="feedback__field field" type="email" name="user-email" id="user-email" placeholder="Ваш email" aria-label="Введите ваш email." required>
-                <span class="feedback__error-clue">Подсказка</span>
-              </li>
-              <li class="feedback__item">
-                <label class="feedback__label" for="user-address">Адрес</label>
-                <textarea class="feedback__field field field--address" name="user-address" id="user-address" cols="15" rows="1" placeholder="Адрес в Санкт-Петербурге" aria-label="Введите адрес доставки." required></textarea>
-                <span class="feedback__error-clue">Подсказка</span>
-              </li>
-              <li class="feedback__item">
-                <label class="feedback__label" for="user-wishes">Пожелания к заказу</label>
-                <textarea class="feedback__field field wishes-field" name="user-wishes" id="user-wishes" cols="30" rows="4" placeholder="Чем мы можем вам помочь?" aria-label="Введите ваши пожелания к заказу."></textarea>
-                <span class="feedback__error-clue">Подсказка</span>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="form__submit order-button button" type="submit">Заказать</button>
-        </form>
+      <section class="page__order order">
+        <div class="container">
+          <h1 class="order__title">Закажи ягоды</h1>
+          <p class="order__descr">Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или замороженными</p>
+          <form class="order__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form__group form__berries">
+              <legend class="form__title">Выберите ягоды</legend>
+              <ul class="form__checkbox-list checkbox-list reset-list">
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cowberry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">брусника</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cherry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">вишня</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="blueberry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">голубика</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="blackberry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">ежевика</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="strawberry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">клубника</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cranberry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">клюква</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="gooseberry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">крыжовник</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="raspberry">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">малина</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="cloudberry" disabled>
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">морошка</span>
+                  </label>
+                </li>
+                <li class="checkbox-list__item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="berry-type" value="huckleberry" disabled>
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">черника</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group form__storage">
+              <legend class="form__title">Вид хранения</legend>
+              <ul class="form__checkbox-list checkbox-list reset-list">
+                <li class="form__checkbox-item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="storage-type" value="fresh-berries">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">свежие ягоды</span>
+                  </label>
+                </li>
+                <li class="form__checkbox-item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="storage-type" value="frozen-berries">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">замороженные ягоды</span>
+                  </label>
+                </li>
+                <li class="form__checkbox-item">
+                  <label class="checkbox-list__control control">
+                    <input class="checkbox-list__field visually-hidden" type="checkbox" name="storage-type" value="berry-mixes">
+                    <span class="control__outline checkbox-list__outline"></span>
+                    <span class="checkbox-list__text">ягодные миксы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group form__delivery">
+              <legend class="form__title">Способ доставки</legend>
+              <ul class="form__radio-list radio-list reset-list">
+                <li class="radio-list__item">
+                  <label class="radio-list__control control">
+                    <input class="radio-list__field visually-hidden" type="radio" name="delivery-type" value="delivery" checked>
+                    <span class="control__outline radio-list__outline"></span>
+                    <span class="radio-list__text">Доставка <br> (по СПБ в пределах &nbsp;КАД)</span>
+                  </label>
+                </li>
+                <li class="radio-list__item">
+                  <label class="radio-list__control control">
+                    <input class="radio-list__field visually-hidden" type="radio" name="delivery-type" value="pickup">
+                    <span class="control__outline radio-list__outline"></span>
+                    <span class="radio-list__text">Самовывоз <br> (Набережная&nbsp;Обводного канала, 101)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group form__feedback feedback">
+              <legend class="form__title">Ваши контакты</legend>
+              <ul class="feedback__list reset-list">
+                <li class="feedback__item">
+                  <!-- Для показа состояния ошибки поля с подсказкой добавить для инпута класс feedback__field-error -->
+                  <label class="feedback__label" for="user-name">Имя</label>
+                  <input class="feedback__field field" type="text" name="user-name" id="user-name" placeholder="Как к вам обращаться?" aria-label="Введите ваше имя." required>
+                  <span class="feedback__error-clue">Подсказка</span>
+                </li>
+                <li class="feedback__item">
+                  <label class="feedback__label" for="user-number">Телефон</label>
+                  <input class="feedback__field field" type="tel" name="user-number" id="user-number" placeholder="+7 ххх ххх хх хх" aria-label="Введите ваш номер телефона." required>
+                  <span class="feedback__error-clue">Подсказка</span>
+                </li>
+                <li class="feedback__item">
+                  <label class="feedback__label" for="user-email">Email</label>
+                  <input class="feedback__field field" type="email" name="user-email" id="user-email" placeholder="Ваш email" aria-label="Введите ваш email." required>
+                  <span class="feedback__error-clue">Подсказка</span>
+                </li>
+                <li class="feedback__item">
+                  <label class="feedback__label" for="user-address">Адрес</label>
+                  <textarea class="feedback__field field field--address" name="user-address" id="user-address" cols="15" rows="1" placeholder="Адрес в Санкт-Петербурге" aria-label="Введите адрес доставки." required></textarea>
+                  <span class="feedback__error-clue">Подсказка</span>
+                </li>
+                <li class="feedback__item">
+                  <label class="feedback__label" for="user-wishes">Пожелания к заказу</label>
+                  <textarea class="feedback__field field wishes-field" name="user-wishes" id="user-wishes" cols="30" rows="4" placeholder="Чем мы можем вам помочь?" aria-label="Введите ваши пожелания к заказу."></textarea>
+                  <span class="feedback__error-clue">Подсказка</span>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="form__submit order-button button" type="submit">Заказать</button>
+          </form>
+        </div>
       </section>
       <section class="page__contacts contacts contacts--indentations">
         <div class="contacts-wrapper container">
