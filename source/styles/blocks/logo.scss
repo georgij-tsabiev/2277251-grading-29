@@ -9,6 +9,10 @@
   &:active .logo__image {
     color: rgba(15, 128, 93, 0.5);
   }
+
+  @media (max-width: 767px) {
+    @include flex(row, normal, center);
+  }
 }
 
 .logo__image {
