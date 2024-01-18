@@ -16,9 +16,8 @@
 
 .header__wrapper {
   @include flex();
-  position: relative;
-  flex-wrap: wrap;
   padding: 4px 21px 4px 26px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding: 22px 26px 19px 26px;
@@ -26,15 +25,5 @@
 
   @media (min-width: $desktop-width) {
     padding: 24px 192px 21px 156px;
-  }
-}
-
-.nav--opened .nav__list {
-  @media (max-width: 767px) {
-    position: absolute;
-    width: 100%;
-    top: 68px;
-    left: 0;
-    background-color: #f1f6fc;
   }
 }
