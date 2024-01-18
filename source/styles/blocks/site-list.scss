@@ -1,5 +1,7 @@
 .site-list__item {
-  @include flex();
+  @media (min-width: $tablet-width) {
+    @include flex();
+  }
 }
 
 .site-list__link {
