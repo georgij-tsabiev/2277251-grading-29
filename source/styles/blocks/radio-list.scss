@@ -51,15 +51,6 @@
   border-radius: 50%;
 }
 
-/* .radio-list__field + .radio-list__outline::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 0;
-  left: 0;
-} */
-
 .radio-list__field:checked + .radio-list__outline::after {
   content: "";
   position: absolute;
