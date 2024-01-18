@@ -12,6 +12,33 @@
   }
 }
 
+.contacts-wrapper--indentations {
+  .contacts-wrapper__title {
+    margin: 0 0 64px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 73px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 72px;
+      transform: translateX(-53px);
+    }
+  }
+
+  .contacts-wrapper__list {
+    @media (min-width: $desktop-width) {
+      padding: 0 0 0 6px;
+    }
+  }
+
+  .contacts-wrapper__email {
+    @media (min-width: $desktop-width) {
+      padding: 4px 28px 6px 28px;
+    }
+  }
+}
+
 .contacts-wrapper__title {
   margin: 0 0 70px 0;
   color: $secondary-color;
