@@ -24,16 +24,16 @@
 }
 
 .contacts--indentations {
-  margin: 0 0 64px;
+  margin: 0 0 64px 0;
   padding: 94px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 100px;
+    margin: 0 0 100px 0;
     padding: 114px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 78px;
+    margin: 0 0 78px 0;
     padding: 142px 0 0 0;
   }
 }

@@ -14,14 +14,14 @@
 
 .contacts-wrapper--indentations {
   .contacts-wrapper__title {
-    margin: 0 0 64px;
+    margin: 0 0 64px 0;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 73px;
+      margin: 0 0 73px 0;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 72px;
+      margin: 0 0 72px 0;
       transform: translateX(-53px);
     }
   }

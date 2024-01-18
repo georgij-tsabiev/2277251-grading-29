@@ -83,22 +83,22 @@
     padding: 40px 18px 70px 18px;
 
     .novelties__name {
-      margin: 0 0 30px;
+      margin: 0 0 30px 0;
     }
 
     @media (min-width: $tablet-width) {
-      padding: 47px 34px 104px;
+      padding: 47px 34px 104px 34px;
 
       .novelties__name {
-        margin: 0 0 42px;
+        margin: 0 0 42px 0;
       }
     }
 
     @media (min-width: $desktop-width) {
-      padding: 47px 34px 106px;
+      padding: 47px 34px 106px 34px;
 
       .novelties__name {
-        margin: 0 0 39px;
+        margin: 0 0 39px 0;
       }
     }
   }
@@ -107,7 +107,7 @@
     padding: 51px 18px 70px 18px;
 
     .novelties__name {
-      margin: 0 0 44px;
+      margin: 0 0 44px 0;
     }
 
     .novelties__descr {
@@ -115,11 +115,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 63px 34px 104px;
+      padding: 63px 34px 104px 34px;
       transform: translateX(-5px);
 
       .novelties__name {
-        margin: 0 0 58px;
+        margin: 0 0 58px 0;
       }
 
       .novelties__descr {
@@ -128,7 +128,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 63px 34px 106px;
+      padding: 63px 34px 106px 34px;
       transform: none;
     }
   }
