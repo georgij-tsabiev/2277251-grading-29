@@ -15,7 +15,7 @@
 }
 
 .header__wrapper {
-  @include flex(row, normal, center);
+  @include flex();
   position: relative;
   flex-wrap: wrap;
   padding: 4px 21px 4px 26px;

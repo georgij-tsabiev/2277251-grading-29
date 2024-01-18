@@ -43,4 +43,10 @@
     font-size: 18px;
     line-height: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 45px auto;
+    max-width: 530px;
+    transform: none;
+  }
 }

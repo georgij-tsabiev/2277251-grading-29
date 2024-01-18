@@ -10,8 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 251px 354px;
-    gap: 48px;
+    grid-template-columns: 255px 358px;
+    gap: 44px;
   }
 }
 
@@ -21,6 +21,11 @@
 
     @media (min-width: $tablet-width) {
       max-width: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      letter-spacing: 0;
+      margin-left: -1px;
     }
   }
 }

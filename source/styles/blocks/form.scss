@@ -10,6 +10,10 @@
     background-image: url("../../images/icons/stack.svg#divider-tablet");
     background-size: 296px 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 104px 0 0 0;
+  }
 }
 
 .form__group {
@@ -28,6 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 57px 0;
     padding: 0;
   }
 }
@@ -85,7 +90,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: 158px 223px 167px;
     gap: 24px 48px;
   }
 }
@@ -114,6 +119,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 40px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 48px 0;
+  }
 }
 
 .form__feedback .form__title {
@@ -125,6 +134,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 48px 0;
     text-align: start;
   }
 }

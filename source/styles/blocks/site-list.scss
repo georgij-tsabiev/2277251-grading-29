@@ -1,4 +1,10 @@
+.site-list__item {
+  @include flex();
+}
+
 .site-list__link {
+  padding: 20px 0;
+  width: 100%;
   color: #000000;
   font-size: 20px;
 
