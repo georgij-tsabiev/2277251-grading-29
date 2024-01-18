@@ -95,15 +95,17 @@
   }
 }
 
-.form__checkbox-item:nth-child(3) {
-  @media (min-width: $tablet-width) {
-    grid-row: 1;
-    grid-column: 2;
-  }
+.form__checkbox-item {
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      grid-row: 1;
+      grid-column: 2;
+    }
 
-  @media (min-width: $desktop-width) {
-    grid-row: auto;
-    grid-column: auto;
+    @media (min-width: $desktop-width) {
+      grid-row: auto;
+      grid-column: auto;
+    }
   }
 }
 
