@@ -196,6 +196,4 @@ export function runDev (done) {
   )(done);
 }
 
-ghpages.publish('build', (error) => {
-  error();
-});
+ghpages.publish('build', () => {});
