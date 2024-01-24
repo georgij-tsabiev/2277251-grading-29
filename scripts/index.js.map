@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/index.js"],
+  "sourcesContent": ["/* \u041C\u043E\u0431\u0438\u043B\u044C\u043D\u0430\u044F \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044F */\n\nconst nav = document.querySelector('.nav');\nconst navToggle = document.querySelector('.nav__toggle');\n\nnav.classList.remove('nav--no-js');\nnavToggle.classList.remove('nav__toggle--no-js');\n\nnavToggle.addEventListener('click', () => {\n  if (nav.classList.contains('nav--closed')) {\n    nav.classList.remove('nav--closed');\n    nav.classList.add('nav--opened');\n  } else {\n    nav.classList.add('nav--closed');\n    nav.classList.remove('nav--opened');\n  }\n});\n"],
+  "mappings": ";AAEA,IAAM,MAAM,SAAS,cAAc,MAAM;AACzC,IAAM,YAAY,SAAS,cAAc,cAAc;AAEvD,IAAI,UAAU,OAAO,YAAY;AACjC,UAAU,UAAU,OAAO,oBAAoB;AAE/C,UAAU,iBAAiB,SAAS,MAAM;AACxC,MAAI,IAAI,UAAU,SAAS,aAAa,GAAG;AACzC,QAAI,UAAU,OAAO,aAAa;AAClC,QAAI,UAAU,IAAI,aAAa;AAAA,EACjC,OAAO;AACL,QAAI,UAAU,IAAI,aAAa;AAC/B,QAAI,UAAU,OAAO,aAAa;AAAA,EACpC;AACF,CAAC;",
+  "names": []
+}

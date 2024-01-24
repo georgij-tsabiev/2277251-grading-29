@@ -1,1 +1,15 @@
-var e=document.querySelector(".nav"),s=document.querySelector(".nav__toggle");e.classList.remove("nav--no-js");s.classList.remove("nav__toggle--no-js");s.addEventListener("click",()=>{e.classList.contains("nav--closed")?(e.classList.remove("nav--closed"),e.classList.add("nav--opened")):(e.classList.add("nav--closed"),e.classList.remove("nav--opened"))});
+// source/scripts/index.js
+var nav = document.querySelector(".nav");
+var navToggle = document.querySelector(".nav__toggle");
+nav.classList.remove("nav--no-js");
+navToggle.classList.remove("nav__toggle--no-js");
+navToggle.addEventListener("click", () => {
+  if (nav.classList.contains("nav--closed")) {
+    nav.classList.remove("nav--closed");
+    nav.classList.add("nav--opened");
+  } else {
+    nav.classList.add("nav--closed");
+    nav.classList.remove("nav--opened");
+  }
+});
+//# sourceMappingURL=index.js.map
