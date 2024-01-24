@@ -1,1 +1,32 @@
-var e,r=document.querySelector(".page__map"),c=document.querySelector(".contacts__map-wrapper"),t=[59.91337456420126,30.331390999999872],a=[15,23],s=[-10,-25],m=14;r.classList.remove("map--no-js");c.classList.remove("contacts__map-wrapper--no-js");function l(){let o=new e.Map("map",{center:t,zoom:m}),n=new e.Placemark(t,{},{iconLayout:"default#image",iconImageHref:"images/icons/stack.svg#map-pin",iconImageSize:a,iconImageOffset:s});o.controls.remove("geolocationControl"),o.controls.remove("searchControl"),o.controls.remove("trafficControl"),o.controls.remove("typeSelector"),o.controls.remove("fullscreenControl"),o.controls.remove("zoomControl"),o.controls.remove("rulerControl"),o.geoObjects.add(n)}e.ready(l);
+// source/scripts/map.js
+var ymaps;
+var mapWrapper = document.querySelector(".page__map");
+var mapImage = document.querySelector(".contacts__map-wrapper");
+var center = [59.91337456420126, 30.331390999999872];
+var pinSize = [15, 23];
+var pinOffset = [-10, -25];
+var zoom = 14;
+mapWrapper.classList.remove("map--no-js");
+mapImage.classList.remove("contacts__map-wrapper--no-js");
+function init() {
+  const map = new ymaps.Map("map", {
+    center,
+    zoom
+  });
+  const placemark = new ymaps.Placemark(center, {}, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/stack.svg#map-pin",
+    iconImageSize: pinSize,
+    iconImageOffset: pinOffset
+  });
+  map.controls.remove("geolocationControl");
+  map.controls.remove("searchControl");
+  map.controls.remove("trafficControl");
+  map.controls.remove("typeSelector");
+  map.controls.remove("fullscreenControl");
+  map.controls.remove("zoomControl");
+  map.controls.remove("rulerControl");
+  map.geoObjects.add(placemark);
+}
+ymaps.ready(init);
+//# sourceMappingURL=map.js.map
