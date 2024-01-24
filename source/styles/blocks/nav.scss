@@ -92,7 +92,9 @@
 }
 
 .nav--no-js.nav {
-  width: 100%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .nav--no-js .nav__list {
