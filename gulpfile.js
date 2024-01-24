@@ -193,7 +193,7 @@ export function runDev (done) {
       createStack,
     ),
     startServer,
-  )(done);
+  )
+  ghpages.publish('build', () => {});
+  (done);
 }
-
-ghpages.publish('build', () => {});
